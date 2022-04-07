@@ -56,7 +56,7 @@ function Handle_Operator(Next_Operator) {
         Calculator.First_Operand = parseFloat(result);
     }
     Calculator.Wait_Second_Operand = true;
-    Calculator.opertor = Next_Operator;
+    Calculator.operator = Next_Operator;
 }
 
 const Perform_Calculation = {
@@ -68,7 +68,7 @@ const Perform_Calculation = {
 
     '-': (First_Operand, Second_Operand) => First_Operand - Second_Operand,
 
-    '=': (_First_Operand, Second_Operand) => Second_Operand 
+    '=': (First_Operand, Second_Operand) => Second_Operand 
 };
 
 function Calculator_Reset() {
